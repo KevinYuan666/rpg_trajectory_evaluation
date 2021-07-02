@@ -1,5 +1,4 @@
 *.pyc
 results/
-.idea/
 *.pyc
-
+.idea/
