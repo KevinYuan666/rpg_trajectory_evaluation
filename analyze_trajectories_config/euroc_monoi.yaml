@@ -22,7 +22,22 @@ Datasets:
   V2_03:
     label: V203
 Algorithms:
-  monoi:
+  monoi2:
     fn: traj_est
-    label: monoi
+    label: monoi2
+  monoi3:
+    fn: traj_est
+    label: monoi3
+  monoi4:
+    fn: traj_est
+    label: monoi4
+  monoi5:
+    fn: traj_est
+    label: monoi5
+  monoi6:
+    fn: traj_est
+    label: monoi6
+  monoi7:
+    fn: traj_est
+    label: monoi7
 RelDistances: []

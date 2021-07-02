@@ -2,7 +2,7 @@
 
 import os
 import argparse
-from ruamel.yaml import YAML
+import yaml
 import shutil
 import json
 from datetime import datetime
@@ -22,7 +22,7 @@ from fn_constants import kNsToEstFnMapping, kNsToMatchFnMapping, kFnExt
 init(autoreset=True)
 
 rc('font', **{'family': 'serif', 'serif': ['Cardo']})
-rc('text', usetex=True)
+rc('text', usetex=False)
 
 FORMAT = '.pdf'
 
@@ -317,7 +317,6 @@ def plot_overall_odometry_errors(odo_err_col, algorithm_names, rel_e_distances,
 
 
 def parse_config_file(config_fn, sort_names):
-    yaml = YAML()
     with open(config_fn) as f:
         d = yaml.load(f)
     datasets = d['Datasets'].keys()
