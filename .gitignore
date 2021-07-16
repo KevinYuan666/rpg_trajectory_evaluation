@@ -1,4 +1,8 @@
 *.pyc
-results/
+results/euroc_monoi_*/
+results/euroc_vins/
+results/euroc_vislam_mono/
+!euroc_monoi
 *.pyc
 .idea/
+
